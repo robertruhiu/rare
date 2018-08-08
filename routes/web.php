@@ -280,7 +280,7 @@ Route::group(['middleware'=>'auth'], function () {
     Route::get('dashboard', 'RecruiterController@dashboard');
     Route::get('payment', 'RecruiterController@payment');
     Route::get('listassessment/{id}','RecruiterController@listassessment');
-
+    Route::get('project/{store_id}','RecruiterController@project');
 
     Route::get('chooseframelang/{id}', 'RecruiterController@getAssessment');
     Route::get('chooseframelangfront/{id}', 'RecruiterController@getFrontend');
