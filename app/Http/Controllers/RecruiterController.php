@@ -136,6 +136,18 @@ class RecruiterController extends Controller
         $assessments = Assessment::find($id);
         return view('pagesrecruter/chooseframelang', ['assessment' => $assessments])->with('skills', Skill::all() );
     }
+    public function getFrontend($id){
+        $frontends = Frontend::find($id);
+        return view('pagesrecruter/chooseframelangfront', ['frontend' => $frontends])->with('skills', Skill::all() );
+    }
+    public function getBackend($id){
+        $backends = Backend::find($id);
+        return view('pagesrecruter/chooseframelangback', ['backend' => $backends])->with('skills', Skill::all() );
+    }
+    public function getFullstack($id){
+        $fullstacks = Fullstack::find($id);
+        return view('pagesrecruter/chooseframelangfull', ['fullstack' => $fullstacks])->with('skills', Skill::all() );
+    }
 
     public function getStates($id)
     {

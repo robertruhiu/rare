@@ -28,7 +28,6 @@ class CreateCandidateStoresTable extends Migration
             $table->date('endassessment')->nullable();
             $table->integer('timeassessment')->nullable();
             $table->date('mytimeassessment')->nullable();
-            $table->string( 'typeassessment')->nullable();
             $table->string('level')->nullable();
             $table->string('type')->nullable();
             $table->string('validate')->nullable();

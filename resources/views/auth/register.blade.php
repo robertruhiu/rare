@@ -58,6 +58,9 @@
 
                             <div class="col-md-6">
                                 <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
+                                <small id="passwordHelpInline" class="text-muted">
+                                    Must be 8-20 characters long.One Uppercase lowercase numeric.
+                                </small>
 
                                 @if ($errors->has('password'))
                                     <span class="invalid-feedback" role="alert">

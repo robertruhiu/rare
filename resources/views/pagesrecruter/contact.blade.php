@@ -12,8 +12,9 @@
                         <img src="/storage/avatars/{{ Auth::user()->avatar }}" width="30" height="30" alt="">
                     </li>
                     <li class="nav-item dropdown" style="list-style-type: none;float: right;">
-                        <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                            {{ Auth::user()->last_name }} {{ Auth::user()->name }}  <span class="caret"></span>
+                        <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                            {{ Auth::user()->last_name }} {{ Auth::user()->name }} <span class="caret"></span>
                         </a>
 
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -35,78 +36,48 @@
             </nav>
         </div>
     </div>
+    <div class="row" style="margin-left: 0;margin-right: 0">
+        @if( $projects )
+            @foreach($projects as $project)
+                <div class="col-lg-6">
+                    <div class=" card contact" style="width: 100%;padding:5%;margin-bottom:2%">
+                        <div class="row" style="margin-left: 0;margin-right: 0">
+                            <div class="col-lg-4">
+                                <img style="border-radius:57%;width:80%" src="{{ $project->avatar }}"
+                                     alt="Card image cap"><br>
+                                <a href="/contact/{{ $project->id }}">
+                                    <button type="button" class="btn btn-primary btn-sm" style="margin-top:10%;margin-left:2%">
+                                        View Profile
+                                    </button>
+                                </a>
+                            </div>
+                            <div class="col-lg-8">
 
-    <div class="right_col" role="main">
-        <div class="">
-            <div class="clearfix"></div>
+                                <p class="card-text">Name: {{ $project->name }}</p>
 
-            <div class="row">
-                <div class="col-md-12">
-                    <!-- STATIC LAYOUT ENDS -->
-                        <div class="form-group pull-right">
-                            <input class="search form-control" placeholder="What you looking for?" type="text">
-                        </div>
-                        <span class="counter pull-right">20 items</span>
-                        <table class="table table-hover table-bordered results">
-                            <thead>
-                            <tr>
-                                <th>#</th>
-                                <th class="col-md-1 col-xs-12">Picture</th>
-                                <th class="col-md-3 col-xs-12">Names</th>
-                                <th class="col-md-3 col-xs-12">Skills</th>
-                                <th class="col-md-3 col-xs-12">Codeln Certificate</th>
-                                <th class="col-md-3 col-xs-12">Open for :</th>
-                                <th class="col-md-2 col-xs-12">Action</th>
-                            </tr>
-                            <tr class="warning no-result" style="display: none;">
-                                <td colspan="4"><i class="fa fa-warning"></i> No result</td>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            @if( $projects )
-                                @foreach($projects as $project)
-                            <tr visible="true">
-                                <th>{{ $loop->iteration }}</th>
-                                <td class="text-center"><img  class="img-circle img-responsive text-center" src="{{ $project->avatar }}" /></td>
-                                <td>{{ $project->name }}
-                                {{ $project->biography}}</td>
-                                <td>
-                                    @foreach($project->skills as $skill)
-                                        <p class="btn btn-success">{{$skill->name}}</p>
-                                        <br>
-                                    @endforeach
-                                </td>
-                                <td>
-                                    @foreach($project->rewards as $reward)
-                                        <p class="btn btn-success">{{$reward->name}} <img style="padding-left: 35px" class="img-responsive" src="/images2/certificate/{{ $reward->description }}" alt="{{ $reward->description }}"></p>
+                                <p class="text-muted">{{ $project->biography}}</p>
 
-                                        <br>
-                                    @endforeach
-                                </td>
-                                <td>
-                                    @foreach($project->typecontracts as $typecontract)
-                                        <p class="btn btn-success">{{$typecontract->name}}</p> <br>
-                                    @endforeach
-                                </td>
-                                <td>
-                                    <a href="/contact/{{ $project->id }}"><button type="button" class="btn btn-primary btn-xs">
-                                            <i class="fa fa-user"> </i> View Profile
-                                        </button>
-                                    </a>
-                                </td>
-                            </tr>
+                                @foreach($project->skills as $skill)
+                                    <span class="badge  badge-primary">{{$skill->name}}</span>
+
+
                                 @endforeach
-                            @else
-                                <p class="text-center text-primary">No Posts created Yet!</p>
-                            @endif
-                            </tbody>
-                        </table>
+
+                                @foreach($project->typecontracts as $typecontract)
+                                    <span class="badge  badge-info">{{$typecontract->name}}</span>
+
+                                @endforeach
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-            </div>
-        </div>
-    </div>
-    </div>
-    </div>
+
+                    @endforeach
+                    @else
+                        <p class="text-center text-primary">No candiates yet Yet!</p>
+                    @endif
+                </div>
 
 @stop

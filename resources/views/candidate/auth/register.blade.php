@@ -44,6 +44,9 @@
 
                             <div class="col-md-6">
                                 <input id="password" type="password" class="form-control" name="password">
+                                <small id="passwordHelpInline" class="text-muted">
+                                    Must be 8-20 characters long.One Uppercase lowercase numeric.
+                                </small>
 
                                 @if ($errors->has('password'))
                                     <span class="help-block">

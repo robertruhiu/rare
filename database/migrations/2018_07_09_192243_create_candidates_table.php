@@ -15,9 +15,11 @@ class CreateCandidatesTable extends Migration
         Schema::create('candidates', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            
+            $table->string('avatar')->default('user.jpg');
             $table->string('email')->unique();
-            
+            $table->string('linkedin')->nullable();
+            $table->string('github')->nullable();
+            $table->string('biography')->nullable();            
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();

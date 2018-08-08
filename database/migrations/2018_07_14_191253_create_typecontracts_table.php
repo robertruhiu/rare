@@ -16,8 +16,6 @@ class CreateTypecontractsTable extends Migration
         Schema::create('typecontracts', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name')->nullable();
-            $table->string('description')->nullable();
-            $table->string('tag')->nullable();
             $table->timestamps();
         });
     }

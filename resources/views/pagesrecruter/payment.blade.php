@@ -2,7 +2,7 @@
 @section('content')
     <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom fley">
         <div class="navbar fixed-top fine">
-            <h5>Project library</h5>
+            <h5>Congratulations</h5>
             <nav>
                 @guest
                     <li><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></li>
@@ -36,43 +36,25 @@
         </div>
     </div>
 
-    <div class="right_col" role="main">
-    <div class="">
 
-
-        <div class="clearfix"></div>
-
-        <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12" style="padding-bottom:142px ">
-                <div class="x_panel">
-                    <div class="x_title">
-                        <h2>Congratulation </h2>
-
-                        <div class="clearfix"></div>
-                    </div>
-                    <div class="x_content">
-
-
-                    </div>
-                </div>
                 <div class="row">
-                        <div class="col-md-6 card2" style="padding-top: 10px;padding-bottom: 63px">
+                        <div class="col-lg-12 card2" style="padding-top: 10px;padding-bottom: 63px">
                             <div class="text-center">
-                                <img style="padding-left: 200px" class="img-responsive text-center" src="../images2/confetti.png"  alt="resume" />
+                                <img  class="img-responsive text-center" src="../images2/confetti.png"  alt="resume" />
 
-                                <p style="font-size: 18px">You have succefully create your project</p>
-                                <p style="font-size: 18px">Send this link at your candidate to register or accept the request from Codeln's members </p>
+                                <p style="font-size: 18px">You have successfully created a project</p>
+                                <input style="margin-left: 39%;width: 22%" class="form-control" type="text" placeholder="https://bit.ly/2OhMt4v" readonly>
+                                <p style="font-size: 18px">Send this link at your candidates</p>
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Allow Codeln to source test candidates for you</label>
+                                </div>
+
+                                <a href="dashboard"> <button type="button" class="btn btn-primary">Go to my dashboard</button></a>
                             </div>
                         </div>
-                        <div class="col-md-6 card2">
-                            <div class="text-center">
-                                <img style="padding-left: 130px" class="img-responsive text-center" src="../images2/network.png"  alt="resume" />
-                            </div>
-                        </div>
+
 
                 </div>
-            </div>
-        </div>
-    </div>
-</div>
+
 @stop
