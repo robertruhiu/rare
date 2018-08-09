@@ -59,7 +59,7 @@
 
             <div class="card8  ">
                 <div class="card-body">
-                    <h6 class="card-title">Projects in progress</h6>
+                    <h6 class="card-title">Interview scheduled</h6>
                     <p class="card-text"></p>
 
                 </div>
@@ -70,7 +70,7 @@
 
             <div class="card8 ">
                 <div class="card-body">
-                    <h6 class="card-title">Projects pending</h6>
+                    <h6 class="card-title">Feedback recieved</h6>
                     <p class="card-text"></p>
                 </div>
             </div>
@@ -95,10 +95,10 @@
             <tbody>
             @foreach($candidates as $candidate)
                 <tr>
-                    <td>1</td>
+                    <td>*</td>
 
                     <td>
-                        <a href="" target="_blank"> {{$candidate->candidate_name}}</a>
+                        <a href="" target="_blank"> {{$candidate->candidate_name}} </a>
                     </td>
 
                     <td>
@@ -116,7 +116,7 @@
                     </td>
                     <td>
                         <!-- <a href="https://codeln.herokuapp.com/fullreport" target="_blank">-->
-                        <a href="https://codeln.herokuapp.com/fullreport" target="_blank">
+                        <a href="/report">
                             <button class="btn btn-success btn-sm">Full report</button>
                         </a>
                     </td>

@@ -124,7 +124,7 @@
 
                                 Username: kweku@gmail.com<br>
                                 password: ****************<br>
-                                <a href="http://ide.codeln.com:8080/dashboard/#/ide/che/wksp-ecmf" target="_blank" class="btn btn-primary">Start
+                                <a href="http://ide.codeln.com:8080/dashboard/#/ide/che/kweku-test" target="_blank" class="btn btn-primary">Start
                                     project</a>
 
                             </p>

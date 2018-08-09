@@ -64,6 +64,7 @@ class RecruiterController extends Controller
 
         return view('pagesrecruter/profile', ['project' => $projects])->with('candidate_stores');
     }
+
     
 
     public function createprojet()
@@ -99,11 +100,10 @@ class RecruiterController extends Controller
 
     public function dashboard()
     {
+        $dashboards = DB::table('candidate_stores')->select('store_id','name','type')->distinct()->get(['store_id']);
 
-        $dashboards = DB::table('candidate_stores')->get();
 
-        return view('pagesrecruter/dashboard', ['dashboards' => $dashboards]);
-
+        return view('pagesrecruter/dashboard',['dashboards' => $dashboards]);
     }
     public function payment()
     {
@@ -119,6 +119,7 @@ class RecruiterController extends Controller
         return view('pagesrecruter/project', ['candidates' => $candidates]);
 
     }
+
 
     public function listassessment($id){
 

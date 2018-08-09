@@ -68,6 +68,7 @@
 
                                 @endforeach
 
+
                             </div>
                         </div>
                     </div>
@@ -79,5 +80,20 @@
                         <p class="text-center text-primary">No candiates yet Yet!</p>
                     @endif
                 </div>
+    <div>
+        <div class="card text-center">
+            <div class="card-header">
+
+            </div>
+            <div class="card-body">
+                <h5 class="card-title"></h5>
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-primary">To view more profiles Allow codeln sourcing</a>
+            </div>
+            <div class="card-footer text-muted">
+
+            </div>
+        </div>
+    </div>
 
 @stop

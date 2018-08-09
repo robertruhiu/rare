@@ -44,10 +44,10 @@
 
                                 <p style="font-size: 18px">You have successfully created a project</p>
                                 <input style="margin-left: 39%;width: 22%" class="form-control" type="text" placeholder="https://bit.ly/2OhMt4v" readonly>
-                                <p style="font-size: 18px">Send this link at your candidates</p>
+                                <p style="font-size: 18px">Send this link to your candidates</p>
                                 <div class="form-group form-check">
                                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                    <label class="form-check-label" for="exampleCheck1">Allow Codeln to source test candidates for you</label>
+                                    <label class="form-check-label h5" for="exampleCheck1">Allow Codeln to source test candidates for you</label>
                                 </div>
 
                                 <a href="dashboard"> <button type="button" class="btn btn-primary">Go to my dashboard</button></a>

@@ -50,23 +50,29 @@
     </div>
     <div class="row">
         @foreach($dashboards as $dashboard)
-            @if(  $dashboard->user_id == Auth::user()->id)
+
 
                 <div class="col-lg-3">
                     <a href="project/{{$dashboard->store_id}}">
+
+
+
                     <div class="card ml ">
                         <div class="card-body">
-                            <h5 class="card-title">{{$dashboard->name}}</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Project type: {{$dashboard->type}}</h6>
-                            <p class="card-text">Candidates:{{$dashboard->numberapplicant}} </p>
+                            <h5 >Project name: {{$dashboard->name}}</h5>
+                            <p >Project type: {{$dashboard->type}}</p>
+
+
                         </div>
                     </div>
+
+
+
                     </a>
                 </div>
 
-            @else
                 {{--<p class="text-center text-primary">No Posts created Yet!</p>--}}
-            @endif
+
         @endforeach
 
 

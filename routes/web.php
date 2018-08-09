@@ -282,6 +282,7 @@ Route::group(['middleware'=>'auth'], function () {
     Route::get('listassessment/{id}','RecruiterController@listassessment');
     Route::get('project/{store_id}','RecruiterController@project');
 
+
     Route::get('chooseframelang/{id}', 'RecruiterController@getAssessment');
     Route::get('chooseframelangfront/{id}', 'RecruiterController@getFrontend');
     Route::get('chooseframelangback/{id}', 'RecruiterController@getBackend');
@@ -303,11 +304,16 @@ Route::group(['middleware'=>'auth'], function () {
     {
         return View::make('pagesrecruter.candidate');
     });
+    Route::get('/report', function()
+    {
+        return View::make('pagesrecruter.fullreport');
+    });
 
     Route::get('overview', function()
     {
         return View::make('pagesrecruter.overview');
     });
+
 
     Route::get('measure', function()
     {
