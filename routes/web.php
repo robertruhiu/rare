@@ -264,33 +264,33 @@ Route::group(['middleware'=>'auth'], function () {
     Route::post('profile', 'RecruiterController@update_avatar');
     Route::post('photo', 'RecruiterController@update_photo');
 
-    Route::get('contact', 'RecruiterController@contact');
-    Route::get('mycontact', 'RecruiterController@mycontact');
+    Route::get('/contact', 'RecruiterController@contact');
+    Route::get('/mycontact', 'RecruiterController@mycontact');
     Route::get('contact_skill/{id}', 'RecruiterController@contact_skill');
-    Route::get('contact/{id}', 'RecruiterController@getContact');
+    Route::get('/contact/{id}', 'RecruiterController@getContact');
 
-    Route::get('createprojet', 'RecruiterController@createprojet');
-    Route::get('fullstack', 'RecruiterController@fullstack');
-    Route::get('library', 'RecruiterController@library');
-    Route::get('frontend', 'RecruiterController@frontend');
-    Route::get('backend', 'RecruiterController@backend');
+    Route::get('/createprojet', 'RecruiterController@createprojet');
+    Route::get('/fullstack', 'RecruiterController@fullstack');
+    Route::get('/library', 'RecruiterController@library');
+    Route::get('/frontend', 'RecruiterController@frontend');
+    Route::get('/backend', 'RecruiterController@backend');
 
-    Route::get('chooseframelang/getstates/{id}','RecruiterController@getStates');
+    Route::get('/chooseframelang/getstates/{id}','RecruiterController@getStates');
 
-    Route::get('dashboard', 'RecruiterController@dashboard');
-    Route::get('payment', 'RecruiterController@payment');
-    Route::get('listassessment/{id}','RecruiterController@listassessment');
-    Route::get('project/{store_id}','RecruiterController@project');
+    Route::get('/dashboard', 'RecruiterController@dashboard');
+    Route::get('/payment', 'RecruiterController@payment');
+    Route::get('/listassessment/{id}','RecruiterController@listassessment');
+    Route::get('/project/{store_id}','RecruiterController@project');
 
 
-    Route::get('chooseframelang/{id}', 'RecruiterController@getAssessment');
-    Route::get('chooseframelangfront/{id}', 'RecruiterController@getFrontend');
-    Route::get('chooseframelangback/{id}', 'RecruiterController@getBackend');
-    Route::get('chooseframelangfull/{id}', 'RecruiterController@getFullstack');
-    Route::post('chooseframelang', 'RecruiterController@createassessment')->name('chooseframelang.form');
-    Route::post('chooseframelangfront', 'RecruiterController@createassessment')->name('chooseframelangfront.form');
-    Route::post('chooseframelangback', 'RecruiterController@createassessment')->name('chooseframelangback.form');
-    Route::post('chooseframelangfull', 'RecruiterController@createassessment')->name('chooseframelangfull.form');
+    Route::get('/chooseframelang/{id}', 'RecruiterController@getAssessment');
+    Route::get('/chooseframelangfront/{id}', 'RecruiterController@getFrontend');
+    Route::get('/chooseframelangback/{id}', 'RecruiterController@getBackend');
+    Route::get('/chooseframelangfull/{id}', 'RecruiterController@getFullstack');
+    Route::post('/chooseframelang', 'RecruiterController@createassessment')->name('chooseframelang.form');
+    Route::post('/chooseframelangfront', 'RecruiterController@createassessment')->name('chooseframelangfront.form');
+    Route::post('/chooseframelangback', 'RecruiterController@createassessment')->name('chooseframelangback.form');
+    Route::post('/chooseframelangfull', 'RecruiterController@createassessment')->name('chooseframelangfull.form');
 
     Route::get('/brand', 'ImportController@getImport')->name('import');
     Route::post('/import_parse', 'ImportController@parseImport')->name('import_parse');
@@ -329,7 +329,7 @@ Route::group(['middleware'=>'auth'], function () {
     {
         return View::make('pagesrecruter.chooseframelang');
     });
-    Route::get('createproject', function()
+    Route::get('/createproject', function()
     {
         return View::make('pagesrecruter.createproject');
     });

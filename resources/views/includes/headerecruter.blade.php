@@ -13,19 +13,19 @@
             <div class="sidebar-sticky">
                 <ul style="margin-left: -15%;">
                     <li class="nav-item">
-                        <a class="nav-link active" href="dashboard">
+                        <a class="nav-link " href="/dashboard">
                             <span data-feather="home"></span>
-                            Dashboard <span class="sr-only">(current)</span>
+                            My projects
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="library">
+                        <a class="nav-link" href="/library">
                             <span data-feather="book"></span>
                             Project library
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact">
+                        <a class="nav-link" href="/contact">
                             <span data-feather="users"></span>
                             Source Candidates
                         </a>
