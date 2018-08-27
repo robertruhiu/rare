@@ -1,5 +1,5 @@
 <div class="container-fluid">
-    <div class="row" style="height: 70vmax">
+    <div class="row" style="height: 100%">
         <nav class="col-md-2 d-none d-md-block bg-light sidebar" >
             <div class="row" style="width: 100%">
                 <div class="col-lg-12">

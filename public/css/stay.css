@@ -1,4 +1,5 @@
 body {
+    height: 100%;
     font-size: .875rem;
 }
 
@@ -106,7 +107,7 @@ body {
 .cardio{
     box-shadow: 5px 5px 25px 0px rgba(46,61,73,0.2);
     height: 9.25rem;
-    width: 80%;
+    width: 79%;
 }
 .cardi1{
     box-shadow: 5px 5px 25px 0px rgba(46,61,73,0.2);
@@ -128,9 +129,11 @@ body {
 }
 .backend{
     background-image: url("../images2/back.png");
+    background-repeat: no-repeat;
 }
 .fullstack{
     background-image: url("../images2/frontend.png");
+    background-repeat: no-repeat;
 
 }
 
