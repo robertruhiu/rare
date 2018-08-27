@@ -4,7 +4,7 @@
             <div class="row" style="width: 100%">
                 <div class="col-lg-12">
                     <div>
-                        <a class="brandhome codelnlogo" style="text-decoration: none" href="{{ route('candidate.home') }}">CODELN</a>
+                        <a class="brandhome codelnlogo" style="text-decoration: none" href="/">CODELN</a>
                     </div>
 
                 </div>
@@ -13,20 +13,20 @@
             <div class="sidebar-sticky">
                 <ul class="nav ">
                     <li class="nav-item">
-                        <a class="nav-link active" href="{{ route('candidate.home') }}">
+                        <a class="nav-link active" href="/candidate/home">
                             <span data-feather="home"></span>
                             Home <span class="sr-only">(current)</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('candidate.calltoapply') }}">
+                        <a class="nav-link" href="/candidate/calltoapply">
                             <span data-feather="file"></span>
                             Call to Apply
                         </a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('candidate.pendingproject') }}">
+                        <a class="nav-link" href="/candidate/pendingproject">
                             <span data-feather="users"></span>
                             Pending projects
                         </a>

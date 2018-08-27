@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Codeln') }}</title>
+    <title>Codeln</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
@@ -34,7 +34,7 @@
             @auth
 
                 <a href="{{ url('/createprojet') }} " class="js-target-scroll nav-link colorlink">My Account</a>
-                </li>
+
             @else
                 <li class="nav-item">
                     <a href="{{ route('login') }}" class="js-target-scroll nav-link colorlink">Recruiter</a>

@@ -4,7 +4,7 @@
             <div class="row" style="width: 100%">
                 <div class="col-lg-12">
                     <div>
-                        <a class="brandhome codelnlogo" style="text-decoration: none" href="dashboard">CODELN</a>
+                        <a class="brandhome codelnlogo" style="text-decoration: none" href="/">CODELN</a>
                     </div>
 
                 </div>

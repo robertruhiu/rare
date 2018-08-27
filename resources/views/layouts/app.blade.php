@@ -14,13 +14,13 @@
     <link rel="stylesheet" href="{{asset('css/stay.css')}}" type="text/css">
 
 
-    <title>{{ config('app.name', 'Codeln') }}</title>
+    <title>Codeln</title>
 
 
 </head>
 <body>
 <nav id="mynav" class="navbar sticky-top  nav-colored">
-    <a class="brandhome codelnlogo" href="">CODELN</a>
+    <a class="brandhome codelnlogo" href="/">CODELN</a>
 
 
 
@@ -35,7 +35,7 @@
             @auth
 
                 <a href="{{ url('/createprojet') }} " class="js-target-scroll nav-link colorlink">My Account</a>
-                </li>
+
             @else
                 <li class="nav-item">
                     <a href="{{ route('login') }}" class="js-target-scroll nav-link colorlink">Recruiter</a>
